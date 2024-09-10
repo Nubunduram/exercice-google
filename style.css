@@ -221,22 +221,19 @@ header {
 
 .dots-menu-button {
     color: white;
-    display: flex;
-    justify-content: start;
 }
 
 .nav-links svg {
     width: 24px;
     height: 24px;
     fill: white;
-    margin-left: 16px;
 }
 
 .logo-header {
     width: 40px;
     height: 40px;
     display: grid;
-    place-content: center;
+    place-items: center;
     cursor: pointer;
 }
 
