@@ -1,0 +1,338 @@
+/* Reset */
+/* Reset CSS classique simple */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: inherit;
+    outline: none;
+}
+
+a:active {
+    color: inherit;
+}
+
+/* Global Styles */
+
+body {
+    position: relative;
+    min-height: 100dvh;
+    background-color: rgb(60, 60, 60);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+header {
+    margin-top: 8px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 48px;
+    margin-right: 8px;
+}
+
+.nav-links>li {
+    margin: 4px;
+}
+
+.google-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    min-height: 168px;
+    width: 272px;
+    padding-bottom: 38px;
+}
+
+.account-button-container {
+    display: grid;
+    place-content: center;
+}
+
+.account-button {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(18, 140, 18);
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+
+}
+
+.dots-menu-button {
+    color: white;
+    display: flex;
+    justify-content: start;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.logo-header {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.logo-header:hover {
+    background-color: rgba(232, 234, 237, .08);
+    border-radius: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 198px;
+    width: 100%;
+    max-width: 722px;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.input-wrapper>input {
+    width: 100%;
+    border: none;
+}
+
+.input-wrapper>input:focus {
+    border: none;
+    outline: none;
+}
+
+.input-button-container {
+    display: flex;
+}
+
+.shortcut-button {
+    width: 112px;
+    height: 112px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+
+.shortcut-button:hover {
+    background-color: rgba(232, 234, 237, .08);
+}
+
+.shortcut-button>div {
+    background-color: #004a77ff;
+    ;
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+}
+
+.shortcut-button-text {
+    white-space: nowrap;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer-button {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    height: 32px;
+    font-size: 0.7rem;
+    gap: 4px;
+    bottom: 16px;
+    right: 16px;
+    background-color: #004a77ff;
+    color: #c2e7ffff;
+    border-radius: 25px;
+    padding: 8px 16px;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+}
+
+.footer-button:hover {
+    background-color: rgb(11, 94, 146);
+}
+
+.input-button-container svg{
+    width: 24px;
+    height: 24px;
+}
