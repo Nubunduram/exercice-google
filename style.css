@@ -225,10 +225,11 @@ header {
     justify-content: start;
 }
 
-svg {
+.nav-links svg {
     width: 24px;
     height: 24px;
     fill: white;
+    margin-left: 16px;
 }
 
 .logo-header {
@@ -264,7 +265,9 @@ form {
 }
 
 .input-wrapper>input {
-    width: 100%;
+    flex: 1;
+    padding: 0 16px;
+    font-size: 1rem;
     border: none;
 }
 
@@ -332,7 +335,7 @@ form {
     background-color: rgb(11, 94, 146);
 }
 
-.input-button-container svg{
+.input-button-container svg {
     width: 24px;
     height: 24px;
 }
