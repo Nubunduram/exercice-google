@@ -258,19 +258,28 @@ form {
     max-width: 746px;
     height: 48px;
     background-color: white;
-    /* padding: 8px 12px; */
     border-radius: 25px;
 }
 
 .input-wrapper>input {
     flex: 1;
-    font-size: 1rem;
     border: none;
+    padding: 1px 87px 1px 14px;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: 100%;
 }
 
 .input-wrapper>input:focus {
     border: none;
     outline: none;
+}
+
+.glass-svg {
+    display: grid;
+    place-items: center;
+    padding-left: 18px;
 }
 
 .input-button-container {
