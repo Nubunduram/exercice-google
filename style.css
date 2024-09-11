@@ -179,6 +179,10 @@ footer {
 }
 
 header {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration-style: solid;
     margin-top: 8px;
 }
 
@@ -187,11 +191,12 @@ header {
     justify-content: flex-end;
     align-items: center;
     height: 48px;
-    margin-right: 8px;
+    margin-right: 11px;
 }
 
-.nav-links>li {
+.nav-links>li>* {
     margin: 4px;
+    margin-right: 11px;
 }
 
 .google-logo-container {
