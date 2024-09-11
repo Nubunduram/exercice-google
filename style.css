@@ -250,6 +250,7 @@ form {
 }
 
 .input-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -284,6 +285,25 @@ form {
 
 .input-button-container {
     display: flex;
+}
+
+.input-button-container>button>svg {
+    width: 20.7px;
+    height: 20.7px;
+    position: absolute;
+    padding: 0 0 2px 0;
+}
+
+.vocal-search-svg {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 55.5px;
+}
+
+.lens-search-svg {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 19px;
 }
 
 .shortcut-button {
